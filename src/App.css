@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 20px;
+  background-color: #f1f5ff;
+}
+
+.input {
+  margin-right: 5px;
+  height: 20px;
+}
+
+.button {
+  background-color: #fff;
+  border: 1px solid green;
+  color: green;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.main {
+  background-color: #edecec;
+  margin: 30px 70px;
+  padding: 75px 40px 0px;
+  height: 200px;
+}
+
+.profile {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.profile__name {
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile__avatar {
+  margin: 0px 10px;
+}
+
+.profile__avatar img {
+  max-height: 40px;
+  border-radius: 50%;
+  display: block;
+}
+
+.profile__button {
+  border-color: rgb(175, 10, 32);
+  color: rgb(175, 10, 32);
+}
+
+.newsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.news {
+  width: 400px;
+  border: 1px solid rgb(195, 195, 196);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.news__image img {
+  display: block;
+  max-width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.news__title {
+  margin: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.news__content {
+  font-size: 18px;
+  margin: 20px 20px;
 }
